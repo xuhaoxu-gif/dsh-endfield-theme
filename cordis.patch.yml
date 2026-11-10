@@ -1,0 +1,3 @@
+- insert:
+    - id: dsh-endfield-theme
+      name: '@local/dsh-endfield-theme'

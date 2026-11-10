@@ -1,0 +1,43 @@
+{
+  "name": "@local/dsh-endfield-theme",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Endfield-inspired industrial skin for DeepSeek Harness",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "client.template.js",
+    "skin.css",
+    "cordis.patch.yml",
+    "scripts/*.mjs",
+    "assets/*",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "scripts": {
+    "build": "node scripts/build-client.mjs",
+    "verify": "node scripts/verify.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}

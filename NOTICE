@@ -1,0 +1,26 @@
+Third-party notices
+===================
+
+endfield-ui
+-----------
+This plugin applies the platform-neutral visual rules, tokens, and contour
+artwork distributed with hhikr/endfield-ui-skill:
+https://github.com/hhikr/endfield-ui-skill
+
+The upstream project states that its code, templates, tokens, rules, and
+contour-generation output may be freely used. This plugin is an independent
+implementation for DeepSeek Harness and is not affiliated with the upstream
+project's maintainers.
+
+Saira
+-----
+The bundled Saira font is Copyright 2020 The Saira Project Authors and is
+licensed under the SIL Open Font License, Version 1.1. The complete license is
+included at assets/Saira-OFL.txt. The font is embedded in the generated
+client.js so the plugin makes no runtime font-download requests.
+
+Arknights: Endfield
+-------------------
+This project is an unofficial visual adaptation. It contains no official game
+fonts, logos, icons, character art, screenshots, or copy. It is not affiliated
+with or endorsed by the game or its developers.

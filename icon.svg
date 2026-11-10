@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">终末地工业风皮肤图标</title>
+  <desc id="desc">原创三色条、黄色切角块与墨色工程线</desc>
+  <path fill="#161616" d="M0 0h64v64H0z"/>
+  <path fill="#FF00F0" d="M4 4h18.7v3H4z"/>
+  <path fill="#FFFA00" d="M22.7 4h18.6v3H22.7z"/>
+  <path fill="#00FFA2" d="M41.3 4H60v3H41.3z"/>
+  <path fill="#FFFA00" d="M8 14h40v28l-8 8H8z"/>
+  <path fill="#161616" d="M15 22h25v4H15zm0 9h18v4H15zm0 9h12v4H15z"/>
+  <path fill="#F4F4F2" d="M52 14h4v36h-4z"/>
+</svg>
