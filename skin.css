@@ -281,14 +281,23 @@ button:focus-visible, [role='button']:focus-visible {
 
 .dsh-endfield__si-art {
   position: fixed;
-  top: 8vh;
-  right: 1vw;
+  inset: 0;
   z-index: 0;
-  width: min(50vw, 780px);
-  height: 82vh;
   overflow: hidden;
-  color: var(--dsw-alias-label-primary);
-  opacity: 0.13;
+  background-color: var(--dsw-alias-bg-base);
+  background-image:
+    linear-gradient(
+      90deg,
+      var(--dsw-alias-bg-base) 0%,
+      color-mix(in srgb, var(--dsw-alias-bg-base) 88%, transparent) 32%,
+      color-mix(in srgb, var(--dsw-alias-bg-base) 12%, transparent) 68%,
+      color-mix(in srgb, var(--dsw-alias-bg-base) 32%, transparent) 100%
+    ),
+    url("__SI_BACKGROUND_DATA_URI__");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.86;
   pointer-events: none;
   user-select: none;
 }
@@ -323,28 +332,6 @@ button:focus-visible, [role='button']:focus-visible {
   fill: none;
   stroke: var(--dsh-endfield-signal);
   stroke-width: 8;
-}
-
-.dsh-endfield__si-title {
-  position: absolute;
-  bottom: 2.5rem;
-  left: 0;
-  font-size: clamp(4rem, 9vw, 9rem);
-  font-stretch: 112%;
-  font-weight: 800;
-  letter-spacing: -0.06em;
-  line-height: 0.85;
-}
-
-.dsh-endfield__si-subtitle {
-  position: absolute;
-  bottom: 0;
-  left: 0.5rem;
-  color: var(--dsw-alias-label-secondary);
-  font-size: 0.7rem;
-  font-stretch: 125%;
-  font-weight: 600;
-  letter-spacing: 0.22em;
 }
 
 .dsh-endfield__si-badge {

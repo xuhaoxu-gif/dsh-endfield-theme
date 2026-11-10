@@ -19,15 +19,23 @@ licensed under the SIL Open Font License, Version 1.1. The complete license is
 included at assets/Saira-OFL.txt. The font is embedded in the generated
 client.js so the plugin makes no runtime font-download requests.
 
-Original Si artwork
--------------------
-The Si mark, bracket composition, geometric horns, and abstract dragon
-linework in this package are original vector artwork created for this plugin.
-They do not copy or embed the reference screenshots supplied during design.
-No official character illustration, dragon illustration, chibi figure, logo,
-font, icon, screenshot, or game copy is included.
+Original Si vector artwork
+--------------------------
+The small Si mark, bracket composition, geometric horns, and abstract dragon
+linework are original vector artwork created for this plugin. They do not copy
+or embed the earlier abstract reference screenshots.
+
+User-supplied background artwork
+--------------------------------
+assets/si-background.jpg is a 1672x941 JPEG supplied by the user for local
+personalization. It is not original plugin artwork and is not licensed under
+this project's MIT License. Redistribution rights have not been independently
+verified. This illustrated edition is kept on a local branch and is not pushed
+to the public main branch without appropriate permission.
 
 Arknights: Endfield
 -------------------
-This project is an unofficial visual adaptation. It is not affiliated with or
-endorsed by the game or its developers.
+This project is an unofficial visual adaptation. The original vector elements
+contain no official game assets. The user-supplied background may contain
+third-party artwork and remains subject to its own rights and permissions.
+The project is not affiliated with or endorsed by the game or its developers.

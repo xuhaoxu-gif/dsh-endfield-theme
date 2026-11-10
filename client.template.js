@@ -56,10 +56,7 @@ window.__ModuleLoader__.load({
           role: 'img', 'aria-label': 'Si theme mark',
         },
           h(SiArtwork)),
-        h('div', { className: 'dsh-endfield__si-art', 'aria-hidden': 'true' },
-          h(SiArtwork),
-          h('div', { className: 'dsh-endfield__si-title' }, '[ 祀 ]'),
-          h('div', { className: 'dsh-endfield__si-subtitle' }, 'SI / DEEPSEEK HARNESS')));
+        h('div', { className: 'dsh-endfield__si-art', 'aria-hidden': 'true' }));
     }
 
     function SiBadge() {
