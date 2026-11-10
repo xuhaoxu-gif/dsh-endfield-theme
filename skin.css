@@ -93,11 +93,29 @@ h1, h2, h3, h4 {
   color: var(--dsw-alias-label-primary);
   font-family: 'DSH Endfield Saira', 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-weight: 700;
-  line-height: 1.35;
+  line-height: 1.2;
   text-wrap: balance;
 }
 
-h1::before, h2::before {
+h1 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+
+h1::before {
+  content: '[ ';
+  color: var(--dsw-alias-label-primary);
+  font-weight: 800;
+}
+
+h1::after {
+  content: ' ]';
+  color: var(--dsw-alias-label-primary);
+  font-weight: 800;
+}
+
+h2::before {
   content: '// ';
   color: var(--dsw-alias-label-secondary);
   font-size: 0.72em;
@@ -168,8 +186,8 @@ button:not(:disabled), [role='button']:not([aria-disabled='true']) {
 }
 
 button[type='submit']:not(:disabled) {
-  background-color: var(--dsw-alias-label-primary);
-  color: var(--dsw-alias-bg-layer-1);
+  background-color: var(--dsh-endfield-signal);
+  color: var(--dsh-endfield-on-signal);
   font-weight: 700;
 }
 
@@ -240,9 +258,126 @@ button:focus-visible, [role='button']:focus-visible {
   transform-origin: left center;
 }
 
-.dsh-endfield__strip > i:nth-child(1) { background: #FF00F0; }
+.dsh-endfield__strip > i:nth-child(1) { background: #7E8B83; }
 .dsh-endfield__strip > i:nth-child(2) { background: #FFFA00; }
-.dsh-endfield__strip > i:nth-child(3) { background: #00FFA2; }
+.dsh-endfield__strip > i:nth-child(3) { background: #D8DFDA; }
+
+[aria-current='page'], [aria-current='true'] {
+  border-left: 4px solid var(--dsw-alias-brand-primary);
+}
+
+.dsh-endfield__si-mark {
+  display: block;
+  width: 52px;
+  height: 52px;
+  color: var(--dsw-alias-label-primary);
+}
+
+.dsh-endfield__si-mark > svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.dsh-endfield__si-art {
+  position: fixed;
+  top: 8vh;
+  right: 1vw;
+  z-index: 0;
+  width: min(50vw, 780px);
+  height: 82vh;
+  overflow: hidden;
+  color: var(--dsw-alias-label-primary);
+  opacity: 0.13;
+  pointer-events: none;
+  user-select: none;
+}
+
+.dsh-endfield__si-art > svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.dsh-endfield__si-line {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 18;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+}
+
+.dsh-endfield__si-line--wide {
+  stroke-width: 28;
+}
+
+.dsh-endfield__si-ink {
+  fill: currentColor;
+}
+
+.dsh-endfield__si-signal {
+  fill: var(--dsh-endfield-signal);
+}
+
+.dsh-endfield__si-rule {
+  fill: none;
+  stroke: var(--dsh-endfield-signal);
+  stroke-width: 8;
+}
+
+.dsh-endfield__si-title {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 0;
+  font-size: clamp(4rem, 9vw, 9rem);
+  font-stretch: 112%;
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  line-height: 0.85;
+}
+
+.dsh-endfield__si-subtitle {
+  position: absolute;
+  bottom: 0;
+  left: 0.5rem;
+  color: var(--dsw-alias-label-secondary);
+  font-size: 0.7rem;
+  font-stretch: 125%;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+}
+
+.dsh-endfield__si-badge {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 4px 0 0;
+  color: var(--dsw-alias-label-secondary);
+  font-size: 10px;
+  font-stretch: 125%;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  line-height: 1.4;
+  user-select: none;
+}
+
+.dsh-endfield__si-badge > span:first-child {
+  color: var(--dsw-alias-label-primary);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+@media (max-width: 1100px) {
+  .dsh-endfield__si-art {
+    display: none;
+  }
+
+  .dsh-endfield__si-mark {
+    width: 44px;
+    height: 44px;
+  }
+}
 
 @media (prefers-reduced-motion: no-preference) {
   button:not(:disabled), [role='button']:not([aria-disabled='true']) {

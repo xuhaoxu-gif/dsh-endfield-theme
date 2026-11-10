@@ -1,9 +1,9 @@
 {
   "name": "@local/dsh-endfield-theme",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
-  "description": "Endfield-inspired industrial skin for DeepSeek Harness",
+  "description": "Original Si-operator industrial skin for DeepSeek Harness",
   "exports": {
     ".": "./index.js",
     "./client": "./client.js",
@@ -22,7 +22,8 @@
     "icon.svg",
     "README.md",
     "LICENSE",
-    "NOTICE"
+    "NOTICE",
+    "docs/*.md"
   ],
   "scripts": {
     "build": "node scripts/build-client.mjs",
