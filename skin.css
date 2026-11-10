@@ -285,18 +285,24 @@ button:focus-visible, [role='button']:focus-visible {
   z-index: 0;
   overflow: hidden;
   background-color: var(--dsw-alias-bg-base);
-  background-image:
-    linear-gradient(
-      90deg,
-      var(--dsw-alias-bg-base) 0%,
-      color-mix(in srgb, var(--dsw-alias-bg-base) 88%, transparent) 32%,
-      color-mix(in srgb, var(--dsw-alias-bg-base) 12%, transparent) 68%,
-      color-mix(in srgb, var(--dsw-alias-bg-base) 32%, transparent) 100%
-    ),
-    url("__SI_BACKGROUND_DATA_URI__");
+  background-image: url("__SI_BACKGROUND_DATA_URI__");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 0, 0, 0.04) 36%,
+    rgba(0, 0, 0, 0.35) 52%,
+    #000 76%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 0, 0, 0.04) 36%,
+    rgba(0, 0, 0, 0.35) 52%,
+    #000 76%
+  );
   opacity: 0.86;
   pointer-events: none;
   user-select: none;

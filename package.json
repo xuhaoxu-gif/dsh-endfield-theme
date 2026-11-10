@@ -1,6 +1,6 @@
 {
   "name": "@local/dsh-endfield-theme",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "private": true,
   "type": "module",
   "description": "Si-operator industrial skin with a user-supplied local illustration",
