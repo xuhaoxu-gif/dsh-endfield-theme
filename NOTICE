@@ -27,11 +27,13 @@ or embed the earlier abstract reference screenshots.
 
 User-supplied background artwork
 --------------------------------
-assets/si-background.jpg is a 1672x941 JPEG supplied by the user for local
-personalization. It is not original plugin artwork and is not licensed under
-this project's MIT License. Redistribution rights have not been independently
-verified. This illustrated edition is kept on a local branch and is not pushed
-to the public main branch without appropriate permission.
+assets/si-background.jpg is a 1672x941 JPEG supplied by the user. It is not
+original plugin artwork and is not licensed under this project's MIT License.
+On 2026-11-11 the user explicitly requested that the illustrated edition and
+this image be published together in the public GitHub repository. Publication
+at the user's direction does not transfer ownership, relicense the image, or
+independently verify third-party redistribution rights. The image remains
+subject to its own rights and permissions.
 
 Arknights: Endfield
 -------------------
